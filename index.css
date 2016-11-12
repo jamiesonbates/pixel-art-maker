@@ -1,0 +1,239 @@
+body {
+  width: 100%;
+  border-style: border-box;
+}
+
+.main {
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*
+   ----------------------------------------------------------------------------
+    GRID
+   ----------------------------------------------------------------------------
+*/
+
+#grid {
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  border-style: border-box;
+}
+
+.column {
+  height: 100%;
+  border-style: border-box;
+}
+
+.column:last-child {
+  border-right: 1px solid grey;
+}
+
+.column div {
+  width: 100%;
+  border-style: border-box;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.column div:last-child {
+  border-bottom: 1px solid grey;
+}
+
+/*
+   ----------------------------------------------------------------------------
+    TOOLS PANEL
+   ----------------------------------------------------------------------------
+*/
+
+#tools-panel {
+  height: 200px;
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  border: 1px solid black;
+}
+
+#color-selector {
+  height: 100%;
+  width: 20%;
+}
+
+#main-tools {
+  height: 100%;
+  width: 40%;
+}
+
+#color-palette {
+  height: 75%;
+  width: 100%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#color-palette h4 {
+  margin: 0;
+  text-align: center;
+  height: 12.5%;
+}
+
+#color-palette .container {
+  height: 87.5%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#color-palette .container div {
+  height: 40%;
+  width: 20%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 1% 2.1%;
+}
+
+#brush-styles {
+  height: 25%;
+  width: 100%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+
+}
+
+#color-themes {
+  height: 100%;
+  width: 20%;
+  border-right: 1px solid black;
+}
+
+#color-themes h5{
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#color-themes .theme {
+  height: 20%;
+  width: 80%;
+  margin: 1% auto;
+  display: block;
+}
+
+#color-themes .theme div {
+  height: 100%;
+  width: 10%;
+  display: inline-block;
+}
+
+#misc {
+  height: 100%;
+  width: 20%;
+}
+
+/*
+   ----------------------------------------------------------------------------
+    COLORS
+   ----------------------------------------------------------------------------
+*/
+
+
+/*Standard Palette*/
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#green {
+  background-color: green;
+}
+
+/*Pastel Pallete*/
+
+#pastel-green {
+  background-color: #8AFFB0;
+}
+
+#pastel-blue {
+  background-color: #7DCEFF;
+}
+
+#pastel-purple {
+  background-color: #B88FFF;
+}
+
+#pastel-orange {
+  background-color: #FFA500;
+}
+
+#pastel-red {
+  background-color: #E85747;
+}
+
+#pastel-yellow {
+  background-color: #FFE35F;
+}
+
+#pastel-pink {
+  background-color: #E89396;
+}
+
+#pastel-bland {
+  background-color: #D1D7FF
+}
+
+/*Tropical Palette*/
+
+#tropical-blue {
+  background-color: #00FFF9;
+}
+
+#tropical-green {
+  background-color: #87FF00;
+}
+
+#tropical-yellow {
+  background-color: #FFF300;
+}
+
+#tropical-purple {
+  background-color: #E80FD5;
+}
+
+#tropcial-pink {
+  background-color: #E84881;
+}
+
+#tropical-red {
+  background-color: #E83000;
+}
+
+#tropical-orange {
+  background-color: #E85616;
+}
+
+#tropical-darkblue {
+  background-color: #0076FF;
+}
