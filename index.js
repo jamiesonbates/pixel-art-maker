@@ -5,6 +5,10 @@
 const grid = document.getElementById('grid');
 const colorPallet = document.getElementById('color-palette');
 let color = '';
+const theme1Btn = document.getElementById('theme-1');
+const theme2Btn = document.getElementById('theme-2');
+
+// Automation of Grid and Pixel Size
 const gridColumns = 50;
 const gridRowsActual = 400 / (1000 / gridColumns);
 const gridRows = Math.floor(400 / (1000 / gridColumns));
@@ -22,7 +26,7 @@ for (let i = 0; i < gridColumns; i++) {
     newRow.style.height = gridRowHeight;
     newColumn.append(newRow);
   }
-  
+
   grid.append(newColumn);
 }
 
@@ -35,5 +39,25 @@ grid.addEventListener('click', (event) => {
 colorPallet.addEventListener('click', (event) => {
   color = event.target.id;
 });
+
+const themePaletteSwap = function(className) {
+  let buttonSibling = event.target.nextSibling;
+  let themeColors = document.getElementsByClassName(className);
+  let paletteColors = document.getElementsByClassName('cp-color');
+  for (let i = 0; i < themeColors.length; i++) {
+    let paletteColorID = paletteColors[i].id;
+    let themeColorID = themeColors[i].id;
+    paletteColors[i].id = themeColorID;
+    themeColors[i].id = paletteColorID;
+  }
+}
+
+theme1Btn.addEventListener('click', (event) => {
+    themePaletteSwap('first-theme');
+});
+
+theme2Btn.addEventListener('click', (event) => {
+    themePaletteSwap('second-theme');
+})
 
 })();
