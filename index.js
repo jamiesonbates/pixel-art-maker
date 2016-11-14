@@ -1,16 +1,6 @@
 (function() {
   'use strict';
 
-// Global Variables
-
-
-//
-const colorSelection = document.getElementById('color-selection');
-
-colorSelection.addEventListener('click', (event) => {
-});
-
-
 // Automation of Grid and Pixel Size
 const grid = document.getElementById('grid');
 
