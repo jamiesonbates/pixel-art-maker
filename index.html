@@ -7,45 +7,68 @@
   <link rel="stylesheet" href="index.css">
   <script defer src="index.js"></script>
   <body>
+    <header>
+      <h1>Pixel Art Maker</h2>
+    </header>
     <main>
-      <section id="grid">
+      <section id="canvass">
+        <section id="grid">
+        </section>
       </section>
 
       <section id="tools-panel">
         <section id="color-selector">
+          <section id="color-selector-heading">
+            <h4>Color Picker</h4>
+            <p>Select your own color!</p>
+          </section>
+          <section id="color-picker">
+            <input id="color-selection" type="color" onchange="return changeEventHandler(event);">
+          </section>
         </section>
 
         <section id="main-tools">
           <section id="color-palette">
-            <h4>Select a Color</h4>
+            <h4>Color Palette</h4>
+            <p>Choose any color!</p>
             <div class="container">
               <div id="red" class="cp-color">
               </div>
-              <div id="blue" class="cp-color">
+              <div id="orange" class="cp-color">
               </div>
               <div id="yellow" class="cp-color">
               </div>
-              <div id="orange" class="cp-color">
+              <div id="green" class="cp-color">
+              </div>
+              <div id="blue" class="cp-color">
               </div>
               <div id="purple" class="cp-color">
               </div>
-              <div id="green" class="cp-color">
+              <div id="gray" class="cp-color">
               </div>
-              <div id="purple" class="cp-color">
-              </div>
-              <div id="green" class="cp-color">
+              <div id="black" class="cp-color">
               </div>
             </div>
           </section>
 
           <section id="brush-styles">
+            <section id="current">
+              <div class='current-color'>
+                <p>Current</p>
+              </div>
+            </section>
+            <section id='eraser'>
+              <div id='white'>
+                <p>Eraser</p>
+              </div>
+            </section>
           </section>
         </section>
 
         <section id="color-themes">
-            <h5>Color Themes</h5>
+            <h4>Color Themes</h4>
             <div class="theme pastel-theme">
-              <button id="theme-1" class="theme-btn">Select</button>
+              <button id="theme-1" class="theme-btn btn">Choose</button>
               <div id="pastel-green" class="first-theme"></div><!--
               --><div id="pastel-blue" class="first-theme"></div><!--
               --><div id="pastel-purple" class="first-theme"></div><!--
@@ -56,7 +79,7 @@
               --><div id="pastel-bland" class="first-theme"></div>
             </div>
             <div class="theme tropical-theme">
-              <button id="theme-2" class="theme-btn">Select</button>
+              <button id="theme-2" class="theme-btn btn">Choose</button>
               <div id="tropical-green" class="second-theme"></div><!--
               --><div id="tropical-blue" class="second-theme"></div><!--
               --><div id="tropical-darkblue" class="second-theme"></div><!--
@@ -67,28 +90,26 @@
               --><div id="tropical-yellow" class="second-theme"></div>
             </div>
             <div class="theme">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="theme">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <button id="theme-3" class="theme-btn btn">Choose</button>
+              <div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div><!--
+              --><div class="third-theme"></div>
             </div>
         </section>
 
         <section id="misc">
+          <section id="grid-sizes">
+            <h4>Choose a Pixel Size</h4>
+            <button id="smallest" class="grid-sizes-btn btn">Smallest</button>
+            <button id="small" class="grid-sizes-btn btn">Small</button>
+            <button id="big" class="grid-sizes-btn btn">Big</button>
+            <button id="biggest" class="grid-sizes-btn btn">Biggest</button>
+          </section>
         </section>
       </section>
     </main>
