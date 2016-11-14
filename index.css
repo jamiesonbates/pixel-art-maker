@@ -77,7 +77,6 @@ header h1 {
   margin-top: 25px;
   display: flex;
   padding: 50px 125px 50px;
-
   border-radius: 25%;
   background-color: black;
   /*border: 1px solid black;*/
@@ -192,7 +191,7 @@ header h1 {
   width: 50%;
 }
 
-.current-color, #white {
+.current-color, #eraser-pink {
   height: 50%;
   width: 30%;
   border: 1px solid black;
@@ -214,7 +213,26 @@ header h1 {
   height: 100%;
   width: 20%;
   background-color: white;
+  display: inline-block;
   /*border-right: 1px solid black;*/
+}
+
+.theme {
+  height: 25%;
+  width: 100%;
+  display: inline-block;
+}
+
+.theme-container {
+  height: 75%;
+  width: 70%;
+  display: inline-block;;
+}
+
+.theme-button-container {
+  height: 75%;
+  width: 28%;
+  display: inline-block;
 }
 
 #color-themes h4{
@@ -225,22 +243,9 @@ header h1 {
   font-family: 'Rock Salt';
 }
 
-#color-themes .theme {
-  height: 26%;
-  width: 90%;
-  margin: 1% auto;
-  display: block;
-}
-
-#color-themes #theme-btn {
+#color-themes .theme .theme-container div {
   height: 50%;
-  width: 5%;
-  display: inline-block;
-}
-
-#color-themes .theme div {
-  height: 50%;
-  width: 8%;
+  width: 10%;
   display: inline-block;
   border-radius: 15%;
 }
@@ -413,8 +418,47 @@ h4 {
   background-color: #0076FF;
 }
 
+/* Rustic Palette*/
+
+#rustic-blue {
+  background-color: #5D857D
+}
+
+#rustic-green {
+  background-color: #79896C;
+}
+#rustic-brown {
+  background-color: #9A9158;
+}
+
+#rustic-yellow {
+  background-color: #FCC550;
+}
+
+#rustic-orange {
+  background-color: #D45824;
+}
+
+#rustic-red {
+  background-color: #BE3606
+}
+
+#rustic-purple {
+  background-color: #501110;
+}
+
+#rustic-clay {
+  background-color: #3A3521;
+}
+
 /* Eraser Color */
 
-#white {
-  background-color: white;
+#eraser-pink {
+  background-color: #EDA4BA;
+}
+
+/* Highlight Active Grid Size */
+
+.green-highlight {
+  background-color: #69FF6C;
 }
